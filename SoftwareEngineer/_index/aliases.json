@@ -1,0 +1,16 @@
+{
+  "_comment": "Extra search terms per heading: { \"<file relative to SoftwareEngineer>\": { \"<heading text as shown in concepts.md>\": [\"alias\", ...] } }. Heading match is case-insensitive; unknown headings are reported as warnings.",
+  "React/React.md": {
+    "useEffect clean up function": ["effect cleanup", "teardown", "unsubscribe"],
+    "Understanding Prop Drilling": ["prop drilling"],
+    "Avoiding Component Function Executions with memo()": ["React.memo", "memoized component"],
+    "State Scheduling & Batching": ["batching", "functional state update"],
+    "Lazy loading": ["React.lazy", "Suspense", "code splitting"]
+  },
+  "Typescript/Typescript.md": {
+    "discriminating union": ["discriminated union", "tagged union"],
+    "Type predicate": ["user-defined type guard", "is keyword"],
+    "Forced \"Not Null\"": ["non-null assertion", "! operator"],
+    "Typescript utility types": ["Partial", "Pick", "Omit", "Required", "ReturnType"]
+  }
+}
