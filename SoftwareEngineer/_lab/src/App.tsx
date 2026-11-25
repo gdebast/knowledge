@@ -1,9 +1,12 @@
 import { useState, type ComponentType } from "react";
 
 // Every src/concepts/*.tsx file with a default export is listed automatically.
-const modules = import.meta.glob<{ default: ComponentType }>("./concepts/*.tsx", {
-  eager: true,
-});
+const modules = import.meta.glob<{ default: ComponentType }>(
+  "./concepts/*.tsx",
+  {
+    eager: true,
+  },
+);
 
 const demos = Object.entries(modules)
   .map(([path, mod]) => ({
@@ -13,7 +16,9 @@ const demos = Object.entries(modules)
   .sort((a, b) => a.name.localeCompare(b.name));
 
 export default function App() {
-  const [selected, setSelected] = useState(() => location.hash.slice(1) || demos[0]?.name);
+  const [selected, setSelected] = useState(
+    () => location.hash.slice(1) || demos[0]?.name,
+  );
   const current = demos.find((d) => d.name === selected);
 
   function select(name: string) {
@@ -22,7 +27,9 @@ export default function App() {
   }
 
   return (
-    <div style={{ display: "flex", gap: 24, fontFamily: "system-ui", padding: 16 }}>
+    <div
+      style={{ display: "flex", gap: 24, fontFamily: "system-ui", padding: 16 }}
+    >
       <nav style={{ minWidth: 220 }}>
         <h3>Concepts</h3>
         {demos.length === 0 && <p>No lab file yet in src/concepts/.</p>}
@@ -31,7 +38,10 @@ export default function App() {
             <li key={d.name}>
               <button
                 onClick={() => select(d.name)}
-                style={{ fontWeight: d.name === selected ? "bold" : "normal", marginBottom: 4 }}
+                style={{
+                  fontWeight: d.name === selected ? "bold" : "normal",
+                  marginBottom: 4,
+                }}
               >
                 {d.name}
               </button>

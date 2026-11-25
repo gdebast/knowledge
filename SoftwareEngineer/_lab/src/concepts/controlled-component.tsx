@@ -10,13 +10,19 @@
  *   (selectedBucketHorizonId + onSelectedBucketHorizonIdChange), used by 3 different parents.
  * Run: npm run dev in _lab, then pick "controlled-component".
  */
-import { useState } from 'react';
+import { useState } from "react";
 
-type HorizonPickerProps = { value: string | null; onValueChange: (value: string | null) => void };
+type HorizonPickerProps = {
+  value: string | null;
+  onValueChange: (value: string | null) => void;
+};
 
 function HorizonPicker({ value, onValueChange }: HorizonPickerProps) {
   return (
-    <select value={value ?? ''} onChange={e => onValueChange(e.target.value || null)}>
+    <select
+      value={value ?? ""}
+      onChange={(e) => onValueChange(e.target.value || null)}
+    >
       <option value="">(global)</option>
       <option value="Daily">Daily</option>
       <option value="Weekly">Weekly</option>
@@ -25,7 +31,7 @@ function HorizonPicker({ value, onValueChange }: HorizonPickerProps) {
 }
 
 export default function Demo() {
-  const [horizon, setHorizon] = useState<string | null>('Weekly');
+  const [horizon, setHorizon] = useState<string | null>("Weekly");
   // TRY 1: replace setHorizon with () => {} (as many repo stories do). Can you still change
   //   the selection? Predict, then run. Who really decides what is displayed?
   // TRY 2: pass onValueChange={v => setHorizon(v === 'Daily' ? 'Weekly' : v)}. The parent can
@@ -34,7 +40,7 @@ export default function Demo() {
   return (
     <div>
       <HorizonPicker value={horizon} onValueChange={setHorizon} />
-      <p>Parent state: {horizon ?? 'null'}</p>
+      <p>Parent state: {horizon ?? "null"}</p>
     </div>
   );
 }
