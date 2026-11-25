@@ -1199,8 +1199,44 @@ If the data can be obtained directly at the first rendering, we do not need useE
 
 ### useCallback
 
-useCallback takes a function and a dependency list as parameters. It returns the function passed, and makes sure that this function is stored and never made again for this component, unless one of the dependencies changes. If the list is empty, the function is recreated every time the component is re-rendered  
+useCallback takes a function and a dependency list as parameters. It returns the function passed, and makes sure that this function is stored and never made again for this component, unless one of the dependencies changes. If the list is empty, the function is never recreated every time the component is re-rendered. If a function captured (like in C++) one object or another function, it is important that ths object or function is added to the dependency list.
 If the function uses a state setter, it is not useful to set it as dependency, because React guarantees that the setter is never recreated.
+
+For instance, in following example, the `Demo` component passes `handlePick` to the `Picker` component. As `Picker` component captures it in a `useCallback`, it must be in the dependency list. If we adds it the "version" value is correctly added to unordered list. Otherwise, the captured `handlePick` is still the old version, so clicking the button never uses the new version value.
+
+```tsx
+import { useCallback, useState } from "react";
+
+function Picker({ onPick }: { onPick: (value: string) => void }) {
+ const handlePick = useCallback((value: string) => onPick(value), [onPick]);
+ return ["A", "B"].map((v) => (
+  <button key={v} onClick={() => handlePick(v)}>
+   {v}
+  </button>
+ ));
+}
+
+export default function Demo() {
+ const [version, setVersion] = useState("v1");
+ const [log, setLog] = useState<string[]>([]);
+ const handlePick = (value: string) => setLog((l) => [...l, `${version}: picked ${value}`]);
+
+ return (
+  <div>
+   <button onClick={() => setVersion((v) => (v === "v1" ? "v2" : "v1"))}>
+    Switch to {version === "v1" ? "v2" : "v1"}
+   </button>
+   <p>Current version: {version}</p>
+   <Picker onPick={handlePick} />
+   <ul>
+    {log.map((line, i) => (
+     <li key={i}>{line}</li>
+    ))}
+   </ul>
+  </div>
+ );
+}
+```
 
 ## A look behind the scene of React and optimization techniques
 
@@ -2021,4 +2057,3 @@ export default function EditEvent() {
 ```
 
 ###
-

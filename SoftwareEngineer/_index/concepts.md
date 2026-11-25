@@ -105,39 +105,39 @@ content; *aliases* (in italics) come from `aliases.json`.
 | &nbsp;&nbsp;&nbsp;&nbsp;useEffect dependencies | React - The complete guide > Handling side effects & working with useEffect hook |  | [L1146](../React/React.md#L1146) |
 | &nbsp;&nbsp;&nbsp;&nbsp;useEffect clean up function | React - The complete guide > Handling side effects & working with useEffect hook | react, useEffect, useState, *effect cleanup*, *teardown*, *unsubscribe* | [L1151](../React/React.md#L1151) |
 | &nbsp;&nbsp;&nbsp;&nbsp;useEffect not needed | React - The complete guide > Handling side effects & working with useEffect hook |  | [L1196](../React/React.md#L1196) |
-| &nbsp;&nbsp;&nbsp;&nbsp;useCallback | React - The complete guide > Handling side effects & working with useEffect hook |  | [L1200](../React/React.md#L1200) |
-| &nbsp;&nbsp;A look behind the scene of React and optimization techniques | React - The complete guide |  | [L1205](../React/React.md#L1205) |
-| &nbsp;&nbsp;&nbsp;&nbsp;React Builds A Component Tree / How React Works Behind The Scenes | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState | [L1207](../React/React.md#L1207) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Avoiding Component Function Executions with memo() | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState, memo, *React.memo*, *memoized component* | [L1249](../React/React.md#L1249) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Understanding the useMemo() Hook | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1292](../React/React.md#L1292) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Introducing the React Compiler | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1296](../React/React.md#L1296) |
-| &nbsp;&nbsp;&nbsp;&nbsp;React Uses A Virtual DOM - Time To Explore It! | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1300](../React/React.md#L1300) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Why Keys Matter When Managing State! | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState | [L1309](../React/React.md#L1309) |
-| &nbsp;&nbsp;&nbsp;&nbsp;State Scheduling & Batching | React - The complete guide > A look behind the scene of React and optimization techniques | *batching*, *functional state update* | [L1393](../React/React.md#L1393) |
-| &nbsp;&nbsp;Sending Http request | React - The complete guide |  | [L1399](../React/React.md#L1399) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Sending HTTP Requests via useEffect | React - The complete guide > Sending Http request | react, useState, useEffect | [L1401](../React/React.md#L1401) |
-| &nbsp;&nbsp;&nbsp;&nbsp;CORS | React - The complete guide > Sending Http request |  | [L1435](../React/React.md#L1435) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Using async/await | React - The complete guide > Sending Http request | react, useState, useEffect | [L1443](../React/React.md#L1443) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Handling loading state | React - The complete guide > Sending Http request | react, useState, useEffect | [L1498](../React/React.md#L1498) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Handing http errors | React - The complete guide > Sending Http request | react, useState, useEffect | [L1535](../React/React.md#L1535) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Using http request body and using request method | React - The complete guide > Sending Http request |  | [L1589](../React/React.md#L1589) |
-| &nbsp;&nbsp;Building Custom React Hooks | React - The complete guide |  | [L1617](../React/React.md#L1617) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Rules of hooks | React - The complete guide > Building Custom React Hooks |  | [L1619](../React/React.md#L1619) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Creating custom hooks | React - The complete guide > Building Custom React Hooks | react, useEffect, useState, useFetch | [L1629](../React/React.md#L1629) |
-| &nbsp;&nbsp;Deploying React Apps | React - The complete guide |  | [L1670](../React/React.md#L1670) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Lazy loading | React - The complete guide > Deploying React Apps | *React.lazy*, *Suspense*, *code splitting* | [L1674](../React/React.md#L1674) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Building the App | React - The complete guide > Deploying React Apps |  | [L1716](../React/React.md#L1716) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Deployment | React - The complete guide > Deploying React Apps |  | [L1726](../React/React.md#L1726) |
-| &nbsp;&nbsp;Tanstack Query | React - The complete guide |  | [L1730](../React/React.md#L1730) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Installing | React - The complete guide > Tanstack Query |  | [L1732](../React/React.md#L1732) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Making a http GET request | React - The complete guide > Tanstack Query | @tanstack/react-query, QueryClientProvider, QueryClient, useQuery | [L1740](../React/React.md#L1740) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Using the caching feature | React - The complete guide > Tanstack Query |  | [L1796](../React/React.md#L1796) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Using the queryKey in queryFn | React - The complete guide > Tanstack Query | useQuery | [L1808](../React/React.md#L1808) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Aborting request | React - The complete guide > Tanstack Query | @tanstack/react-query, useQuery | [L1823](../React/React.md#L1823) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Disabling request | React - The complete guide > Tanstack Query | useRef, useState, useQuery | [L1863](../React/React.md#L1863) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Making a http POST request | React - The complete guide > Tanstack Query | @tanstack/react-query, QueryClientProvider, QueryClient, useMutation, useNavigate, useParams | [L1889](../React/React.md#L1889) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Disabling Automatic Refetching After Invalidations | React - The complete guide > Tanstack Query |  | [L1972](../React/React.md#L1972) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Optimistic Updating | React - The complete guide > Tanstack Query | react-router-dom, Link, useNavigate, useParams, useQuery, useMutation | [L1977](../React/React.md#L1977) |
+| &nbsp;&nbsp;&nbsp;&nbsp;useCallback | React - The complete guide > Handling side effects & working with useEffect hook | Demo, handlePick, Picker, useCallback, react, useState | [L1200](../React/React.md#L1200) |
+| &nbsp;&nbsp;A look behind the scene of React and optimization techniques | React - The complete guide |  | [L1241](../React/React.md#L1241) |
+| &nbsp;&nbsp;&nbsp;&nbsp;React Builds A Component Tree / How React Works Behind The Scenes | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState | [L1243](../React/React.md#L1243) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Avoiding Component Function Executions with memo() | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState, memo, *React.memo*, *memoized component* | [L1285](../React/React.md#L1285) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Understanding the useMemo() Hook | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1328](../React/React.md#L1328) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Introducing the React Compiler | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1332](../React/React.md#L1332) |
+| &nbsp;&nbsp;&nbsp;&nbsp;React Uses A Virtual DOM - Time To Explore It! | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1336](../React/React.md#L1336) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Why Keys Matter When Managing State! | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState | [L1345](../React/React.md#L1345) |
+| &nbsp;&nbsp;&nbsp;&nbsp;State Scheduling & Batching | React - The complete guide > A look behind the scene of React and optimization techniques | *batching*, *functional state update* | [L1429](../React/React.md#L1429) |
+| &nbsp;&nbsp;Sending Http request | React - The complete guide |  | [L1435](../React/React.md#L1435) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Sending HTTP Requests via useEffect | React - The complete guide > Sending Http request | react, useState, useEffect | [L1437](../React/React.md#L1437) |
+| &nbsp;&nbsp;&nbsp;&nbsp;CORS | React - The complete guide > Sending Http request |  | [L1471](../React/React.md#L1471) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Using async/await | React - The complete guide > Sending Http request | react, useState, useEffect | [L1479](../React/React.md#L1479) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Handling loading state | React - The complete guide > Sending Http request | react, useState, useEffect | [L1534](../React/React.md#L1534) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Handing http errors | React - The complete guide > Sending Http request | react, useState, useEffect | [L1571](../React/React.md#L1571) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Using http request body and using request method | React - The complete guide > Sending Http request |  | [L1625](../React/React.md#L1625) |
+| &nbsp;&nbsp;Building Custom React Hooks | React - The complete guide |  | [L1653](../React/React.md#L1653) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Rules of hooks | React - The complete guide > Building Custom React Hooks |  | [L1655](../React/React.md#L1655) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Creating custom hooks | React - The complete guide > Building Custom React Hooks | react, useEffect, useState, useFetch | [L1665](../React/React.md#L1665) |
+| &nbsp;&nbsp;Deploying React Apps | React - The complete guide |  | [L1706](../React/React.md#L1706) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Lazy loading | React - The complete guide > Deploying React Apps | *React.lazy*, *Suspense*, *code splitting* | [L1710](../React/React.md#L1710) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Building the App | React - The complete guide > Deploying React Apps |  | [L1752](../React/React.md#L1752) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Deployment | React - The complete guide > Deploying React Apps |  | [L1762](../React/React.md#L1762) |
+| &nbsp;&nbsp;Tanstack Query | React - The complete guide |  | [L1766](../React/React.md#L1766) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Installing | React - The complete guide > Tanstack Query |  | [L1768](../React/React.md#L1768) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Making a http GET request | React - The complete guide > Tanstack Query | @tanstack/react-query, QueryClientProvider, QueryClient, useQuery | [L1776](../React/React.md#L1776) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Using the caching feature | React - The complete guide > Tanstack Query |  | [L1832](../React/React.md#L1832) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Using the queryKey in queryFn | React - The complete guide > Tanstack Query | useQuery | [L1844](../React/React.md#L1844) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Aborting request | React - The complete guide > Tanstack Query | @tanstack/react-query, useQuery | [L1859](../React/React.md#L1859) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Disabling request | React - The complete guide > Tanstack Query | useRef, useState, useQuery | [L1899](../React/React.md#L1899) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Making a http POST request | React - The complete guide > Tanstack Query | @tanstack/react-query, QueryClientProvider, QueryClient, useMutation, useNavigate, useParams | [L1925](../React/React.md#L1925) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Disabling Automatic Refetching After Invalidations | React - The complete guide > Tanstack Query |  | [L2008](../React/React.md#L2008) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Optimistic Updating | React - The complete guide > Tanstack Query | react-router-dom, Link, useNavigate, useParams, useQuery, useMutation | [L2013](../React/React.md#L2013) |
 
 ## Typescript/Typescript.md
 
