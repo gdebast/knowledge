@@ -6,7 +6,7 @@
 One row per heading of the notes. *Keywords* are extracted from the section
 content; *aliases* (in italics) come from `aliases.json`.
 
-184 concepts in 5 files.
+185 concepts in 5 files.
 
 - [AI/AI-coding-workflow/AI-coding-workflow.md](#aiai-coding-workflowai-coding-workflowmd)
 - [AI/AI-native-SDLC-playbook/AI-native-SDLC-playbook.md](#aiai-native-sdlc-playbookai-native-sdlc-playbookmd)
@@ -77,67 +77,68 @@ content; *aliases* (in italics) come from `aliases.json`.
 | &nbsp;&nbsp;&nbsp;&nbsp;Event handling | React - The complete guide > React Essentials - Components, JSX, Props, State & More |  | [L347](../React/React.md#L347) |
 | &nbsp;&nbsp;&nbsp;&nbsp;State | React - The complete guide > React Essentials - Components, JSX, Props, State & More | react, useState | [L367](../React/React.md#L367) |
 | &nbsp;&nbsp;&nbsp;&nbsp;lifting the state up | React - The complete guide > React Essentials - Components, JSX, Props, State & More |  | [L411](../React/React.md#L411) |
-| &nbsp;&nbsp;&nbsp;&nbsp;CSS Classes | React - The complete guide > React Essentials - Components, JSX, Props, State & More |  | [L416](../React/React.md#L416) |
-| &nbsp;&nbsp;React Essentials - Deep Dive | React - The complete guide |  | [L432](../React/React.md#L432) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Avoiding using JSX | React - The complete guide > React Essentials - Deep Dive |  | [L434](../React/React.md#L434) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Fragment and empty elements | React - The complete guide > React Essentials - Deep Dive |  | [L439](../React/React.md#L439) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Forwarding props to wrapped elements | React - The complete guide > React Essentials - Deep Dive |  | [L462](../React/React.md#L462) |
-| &nbsp;&nbsp;Styling React Components | React - The complete guide |  | [L483](../React/React.md#L483) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Vanilla CSS Styles Are NOT Scoped To Components! | React - The complete guide > Styling React Components |  | [L485](../React/React.md#L485) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Styling React Apps with Inline Styles | React - The complete guide > Styling React Components |  | [L491](../React/React.md#L491) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Dynamic & Conditional Styling with CSS Files & CSS Classes | React - The complete guide > Styling React Components |  | [L514](../React/React.md#L514) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Scoping CSS Rules with CSS Modules | React - The complete guide > Styling React Components |  | [L518](../React/React.md#L518) |
-| &nbsp;&nbsp;&nbsp;&nbsp;The Styled-Component package | React - The complete guide > Styling React Components | styled-components, styled | [L545](../React/React.md#L545) |
-| &nbsp;&nbsp;Debugging React Application | React - The complete guide |  | [L658](../React/React.md#L658) |
-| &nbsp;&nbsp;&nbsp;&nbsp;StrictMode | React - The complete guide > Debugging React Application | react, StrictMode, react-dom/client, ReactDOM | [L660](../React/React.md#L660) |
-| &nbsp;&nbsp;Working with Refs and Portals | React - The complete guide |  | [L677](../React/React.md#L677) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Connecting & Accessing HTML Elements via Refs | React - The complete guide > Working with Refs and Portals | react, useState, useRef | [L679](../React/React.md#L679) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Storing members of components | React - The complete guide > Working with Refs and Portals | react, useRef | [L713](../React/React.md#L713) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Forwarding Refs to Custom Components | React - The complete guide > Working with Refs and Portals | react, useRef | [L738](../React/React.md#L738) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Refs vs State Values | React - The complete guide > Working with Refs and Portals |  | [L770](../React/React.md#L770) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Exposing Component APIs via the useImperativeHandle Hook | React - The complete guide > Working with Refs and Portals | react, useState, useRef, useImperativeHandle | [L778](../React/React.md#L778) |
-| &nbsp;&nbsp;React’s Context API & useReducer | React - The complete guide |  | [L832](../React/React.md#L832) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Understanding Prop Drilling | React - The complete guide > React’s Context API & useReducer | *prop drilling* | [L834](../React/React.md#L834) |
-| &nbsp;&nbsp;&nbsp;&nbsp;React’s Context API | React - The complete guide > React’s Context API & useReducer | react, createContext, useState, use | [L846](../React/React.md#L846) |
-| &nbsp;&nbsp;&nbsp;&nbsp;useReducer hook | React - The complete guide > React’s Context API & useReducer | react, createContext, useReducer | [L994](../React/React.md#L994) |
-| &nbsp;&nbsp;Handling side effects & working with useEffect hook | React - The complete guide |  | [L1050](../React/React.md#L1050) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Using useEffect for Handling (Some) Side Effects | React - The complete guide > Handling side effects & working with useEffect hook | react, useRef, useState, useEffect, react-dom, createPortal | [L1055](../React/React.md#L1055) |
-| &nbsp;&nbsp;&nbsp;&nbsp;useEffect dependencies | React - The complete guide > Handling side effects & working with useEffect hook |  | [L1146](../React/React.md#L1146) |
-| &nbsp;&nbsp;&nbsp;&nbsp;useEffect clean up function | React - The complete guide > Handling side effects & working with useEffect hook | react, useEffect, useState, *effect cleanup*, *teardown*, *unsubscribe* | [L1151](../React/React.md#L1151) |
-| &nbsp;&nbsp;&nbsp;&nbsp;useEffect not needed | React - The complete guide > Handling side effects & working with useEffect hook |  | [L1196](../React/React.md#L1196) |
-| &nbsp;&nbsp;&nbsp;&nbsp;useCallback | React - The complete guide > Handling side effects & working with useEffect hook | Demo, handlePick, Picker, useCallback, react, useState | [L1200](../React/React.md#L1200) |
-| &nbsp;&nbsp;A look behind the scene of React and optimization techniques | React - The complete guide |  | [L1241](../React/React.md#L1241) |
-| &nbsp;&nbsp;&nbsp;&nbsp;React Builds A Component Tree / How React Works Behind The Scenes | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState | [L1243](../React/React.md#L1243) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Avoiding Component Function Executions with memo() | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState, memo, *React.memo*, *memoized component* | [L1285](../React/React.md#L1285) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Understanding the useMemo() Hook | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1328](../React/React.md#L1328) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Introducing the React Compiler | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1332](../React/React.md#L1332) |
-| &nbsp;&nbsp;&nbsp;&nbsp;React Uses A Virtual DOM - Time To Explore It! | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1336](../React/React.md#L1336) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Why Keys Matter When Managing State! | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState | [L1345](../React/React.md#L1345) |
-| &nbsp;&nbsp;&nbsp;&nbsp;State Scheduling & Batching | React - The complete guide > A look behind the scene of React and optimization techniques | *batching*, *functional state update* | [L1429](../React/React.md#L1429) |
-| &nbsp;&nbsp;Sending Http request | React - The complete guide |  | [L1435](../React/React.md#L1435) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Sending HTTP Requests via useEffect | React - The complete guide > Sending Http request | react, useState, useEffect | [L1437](../React/React.md#L1437) |
-| &nbsp;&nbsp;&nbsp;&nbsp;CORS | React - The complete guide > Sending Http request |  | [L1471](../React/React.md#L1471) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Using async/await | React - The complete guide > Sending Http request | react, useState, useEffect | [L1479](../React/React.md#L1479) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Handling loading state | React - The complete guide > Sending Http request | react, useState, useEffect | [L1534](../React/React.md#L1534) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Handing http errors | React - The complete guide > Sending Http request | react, useState, useEffect | [L1571](../React/React.md#L1571) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Using http request body and using request method | React - The complete guide > Sending Http request |  | [L1625](../React/React.md#L1625) |
-| &nbsp;&nbsp;Building Custom React Hooks | React - The complete guide |  | [L1653](../React/React.md#L1653) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Rules of hooks | React - The complete guide > Building Custom React Hooks |  | [L1655](../React/React.md#L1655) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Creating custom hooks | React - The complete guide > Building Custom React Hooks | react, useEffect, useState, useFetch | [L1665](../React/React.md#L1665) |
-| &nbsp;&nbsp;Deploying React Apps | React - The complete guide |  | [L1706](../React/React.md#L1706) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Lazy loading | React - The complete guide > Deploying React Apps | *React.lazy*, *Suspense*, *code splitting* | [L1710](../React/React.md#L1710) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Building the App | React - The complete guide > Deploying React Apps |  | [L1752](../React/React.md#L1752) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Deployment | React - The complete guide > Deploying React Apps |  | [L1762](../React/React.md#L1762) |
-| &nbsp;&nbsp;Tanstack Query | React - The complete guide |  | [L1766](../React/React.md#L1766) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Installing | React - The complete guide > Tanstack Query |  | [L1768](../React/React.md#L1768) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Making a http GET request | React - The complete guide > Tanstack Query | @tanstack/react-query, QueryClientProvider, QueryClient, useQuery | [L1776](../React/React.md#L1776) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Using the caching feature | React - The complete guide > Tanstack Query |  | [L1832](../React/React.md#L1832) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Using the queryKey in queryFn | React - The complete guide > Tanstack Query | useQuery | [L1844](../React/React.md#L1844) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Aborting request | React - The complete guide > Tanstack Query | @tanstack/react-query, useQuery | [L1859](../React/React.md#L1859) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Disabling request | React - The complete guide > Tanstack Query | useRef, useState, useQuery | [L1899](../React/React.md#L1899) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Making a http POST request | React - The complete guide > Tanstack Query | @tanstack/react-query, QueryClientProvider, QueryClient, useMutation, useNavigate, useParams | [L1925](../React/React.md#L1925) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Disabling Automatic Refetching After Invalidations | React - The complete guide > Tanstack Query |  | [L2008](../React/React.md#L2008) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Optimistic Updating | React - The complete guide > Tanstack Query | react-router-dom, Link, useNavigate, useParams, useQuery, useMutation | [L2013](../React/React.md#L2013) |
+| &nbsp;&nbsp;&nbsp;&nbsp;controlled component | React - The complete guide > React Essentials - Components, JSX, Props, State & More | Demo, react, useState | [L416](../React/React.md#L416) |
+| &nbsp;&nbsp;&nbsp;&nbsp;CSS Classes | React - The complete guide > React Essentials - Components, JSX, Props, State & More |  | [L448](../React/React.md#L448) |
+| &nbsp;&nbsp;React Essentials - Deep Dive | React - The complete guide |  | [L464](../React/React.md#L464) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Avoiding using JSX | React - The complete guide > React Essentials - Deep Dive |  | [L466](../React/React.md#L466) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Fragment and empty elements | React - The complete guide > React Essentials - Deep Dive |  | [L471](../React/React.md#L471) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Forwarding props to wrapped elements | React - The complete guide > React Essentials - Deep Dive |  | [L494](../React/React.md#L494) |
+| &nbsp;&nbsp;Styling React Components | React - The complete guide |  | [L515](../React/React.md#L515) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Vanilla CSS Styles Are NOT Scoped To Components! | React - The complete guide > Styling React Components |  | [L517](../React/React.md#L517) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Styling React Apps with Inline Styles | React - The complete guide > Styling React Components |  | [L523](../React/React.md#L523) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Dynamic & Conditional Styling with CSS Files & CSS Classes | React - The complete guide > Styling React Components |  | [L546](../React/React.md#L546) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Scoping CSS Rules with CSS Modules | React - The complete guide > Styling React Components |  | [L550](../React/React.md#L550) |
+| &nbsp;&nbsp;&nbsp;&nbsp;The Styled-Component package | React - The complete guide > Styling React Components | styled-components, styled | [L577](../React/React.md#L577) |
+| &nbsp;&nbsp;Debugging React Application | React - The complete guide |  | [L690](../React/React.md#L690) |
+| &nbsp;&nbsp;&nbsp;&nbsp;StrictMode | React - The complete guide > Debugging React Application | react, StrictMode, react-dom/client, ReactDOM | [L692](../React/React.md#L692) |
+| &nbsp;&nbsp;Working with Refs and Portals | React - The complete guide |  | [L709](../React/React.md#L709) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Connecting & Accessing HTML Elements via Refs | React - The complete guide > Working with Refs and Portals | react, useState, useRef | [L711](../React/React.md#L711) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Storing members of components | React - The complete guide > Working with Refs and Portals | react, useRef | [L745](../React/React.md#L745) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Forwarding Refs to Custom Components | React - The complete guide > Working with Refs and Portals | react, useRef | [L770](../React/React.md#L770) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Refs vs State Values | React - The complete guide > Working with Refs and Portals |  | [L802](../React/React.md#L802) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Exposing Component APIs via the useImperativeHandle Hook | React - The complete guide > Working with Refs and Portals | react, useState, useRef, useImperativeHandle | [L810](../React/React.md#L810) |
+| &nbsp;&nbsp;React’s Context API & useReducer | React - The complete guide |  | [L864](../React/React.md#L864) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Understanding Prop Drilling | React - The complete guide > React’s Context API & useReducer | *prop drilling* | [L866](../React/React.md#L866) |
+| &nbsp;&nbsp;&nbsp;&nbsp;React’s Context API | React - The complete guide > React’s Context API & useReducer | react, createContext, useState, use | [L878](../React/React.md#L878) |
+| &nbsp;&nbsp;&nbsp;&nbsp;useReducer hook | React - The complete guide > React’s Context API & useReducer | react, createContext, useReducer | [L1026](../React/React.md#L1026) |
+| &nbsp;&nbsp;Handling side effects & working with useEffect hook | React - The complete guide |  | [L1082](../React/React.md#L1082) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Using useEffect for Handling (Some) Side Effects | React - The complete guide > Handling side effects & working with useEffect hook | react, useRef, useState, useEffect, react-dom, createPortal | [L1087](../React/React.md#L1087) |
+| &nbsp;&nbsp;&nbsp;&nbsp;useEffect dependencies | React - The complete guide > Handling side effects & working with useEffect hook |  | [L1178](../React/React.md#L1178) |
+| &nbsp;&nbsp;&nbsp;&nbsp;useEffect clean up function | React - The complete guide > Handling side effects & working with useEffect hook | react, useEffect, useState, *effect cleanup*, *teardown*, *unsubscribe* | [L1183](../React/React.md#L1183) |
+| &nbsp;&nbsp;&nbsp;&nbsp;useEffect not needed | React - The complete guide > Handling side effects & working with useEffect hook |  | [L1228](../React/React.md#L1228) |
+| &nbsp;&nbsp;&nbsp;&nbsp;useCallback | React - The complete guide > Handling side effects & working with useEffect hook | Demo, handlePick, Picker, useCallback, react, useState | [L1232](../React/React.md#L1232) |
+| &nbsp;&nbsp;A look behind the scene of React and optimization techniques | React - The complete guide |  | [L1273](../React/React.md#L1273) |
+| &nbsp;&nbsp;&nbsp;&nbsp;React Builds A Component Tree / How React Works Behind The Scenes | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState | [L1275](../React/React.md#L1275) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Avoiding Component Function Executions with memo() | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState, memo, *React.memo*, *memoized component* | [L1317](../React/React.md#L1317) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Understanding the useMemo() Hook | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1360](../React/React.md#L1360) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Introducing the React Compiler | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1364](../React/React.md#L1364) |
+| &nbsp;&nbsp;&nbsp;&nbsp;React Uses A Virtual DOM - Time To Explore It! | React - The complete guide > A look behind the scene of React and optimization techniques |  | [L1368](../React/React.md#L1368) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Why Keys Matter When Managing State! | React - The complete guide > A look behind the scene of React and optimization techniques | react, useState | [L1377](../React/React.md#L1377) |
+| &nbsp;&nbsp;&nbsp;&nbsp;State Scheduling & Batching | React - The complete guide > A look behind the scene of React and optimization techniques | *batching*, *functional state update* | [L1461](../React/React.md#L1461) |
+| &nbsp;&nbsp;Sending Http request | React - The complete guide |  | [L1467](../React/React.md#L1467) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Sending HTTP Requests via useEffect | React - The complete guide > Sending Http request | react, useState, useEffect | [L1469](../React/React.md#L1469) |
+| &nbsp;&nbsp;&nbsp;&nbsp;CORS | React - The complete guide > Sending Http request |  | [L1503](../React/React.md#L1503) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Using async/await | React - The complete guide > Sending Http request | react, useState, useEffect | [L1511](../React/React.md#L1511) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Handling loading state | React - The complete guide > Sending Http request | react, useState, useEffect | [L1566](../React/React.md#L1566) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Handing http errors | React - The complete guide > Sending Http request | react, useState, useEffect | [L1603](../React/React.md#L1603) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Using http request body and using request method | React - The complete guide > Sending Http request |  | [L1657](../React/React.md#L1657) |
+| &nbsp;&nbsp;Building Custom React Hooks | React - The complete guide |  | [L1685](../React/React.md#L1685) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Rules of hooks | React - The complete guide > Building Custom React Hooks |  | [L1687](../React/React.md#L1687) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Creating custom hooks | React - The complete guide > Building Custom React Hooks | react, useEffect, useState, useFetch | [L1697](../React/React.md#L1697) |
+| &nbsp;&nbsp;Deploying React Apps | React - The complete guide |  | [L1738](../React/React.md#L1738) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Lazy loading | React - The complete guide > Deploying React Apps | *React.lazy*, *Suspense*, *code splitting* | [L1742](../React/React.md#L1742) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Building the App | React - The complete guide > Deploying React Apps |  | [L1784](../React/React.md#L1784) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Deployment | React - The complete guide > Deploying React Apps |  | [L1794](../React/React.md#L1794) |
+| &nbsp;&nbsp;Tanstack Query | React - The complete guide |  | [L1798](../React/React.md#L1798) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Installing | React - The complete guide > Tanstack Query |  | [L1800](../React/React.md#L1800) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Making a http GET request | React - The complete guide > Tanstack Query | @tanstack/react-query, QueryClientProvider, QueryClient, useQuery | [L1808](../React/React.md#L1808) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Using the caching feature | React - The complete guide > Tanstack Query |  | [L1864](../React/React.md#L1864) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Using the queryKey in queryFn | React - The complete guide > Tanstack Query | useQuery | [L1876](../React/React.md#L1876) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Aborting request | React - The complete guide > Tanstack Query | @tanstack/react-query, useQuery | [L1891](../React/React.md#L1891) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Disabling request | React - The complete guide > Tanstack Query | useRef, useState, useQuery | [L1931](../React/React.md#L1931) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Making a http POST request | React - The complete guide > Tanstack Query | @tanstack/react-query, QueryClientProvider, QueryClient, useMutation, useNavigate, useParams | [L1957](../React/React.md#L1957) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Disabling Automatic Refetching After Invalidations | React - The complete guide > Tanstack Query |  | [L2040](../React/React.md#L2040) |
+| &nbsp;&nbsp;&nbsp;&nbsp;Optimistic Updating | React - The complete guide > Tanstack Query | react-router-dom, Link, useNavigate, useParams, useQuery, useMutation | [L2045](../React/React.md#L2045) |
 
 ## Typescript/Typescript.md
 

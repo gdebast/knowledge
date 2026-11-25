@@ -413,6 +413,38 @@ It is important to know that we execute a setter, this execution is scheduled on
 When two components need the same state, a pattern is to lift the state to the closest parent.  
 ![](./React_images/image5.png)
 
+### controlled component
+
+When a component is meant to be reused and the state is lifted, a usual pattern is to give to the component the current value and the setter of the state.
+
+In the following example, the `Demo` component owns the state. The current state and its setter are passed to the HorizonPicker component. The responsibility of the component is to offer the drop-down list, not to own the state.
+
+```tsx
+import { useState } from "react";
+
+type HorizonPickerProps = { value: string | null; onValueChange: (value: string | null) => void };
+
+function HorizonPicker({ value, onValueChange }: HorizonPickerProps) {
+ return (
+  <select value={value ?? ""} onChange={(e) => onValueChange(e.target.value || null)}>
+   <option value="">(global)</option>
+   <option value="Daily">Daily</option>
+   <option value="Weekly">Weekly</option>
+  </select>
+ );
+}
+
+export default function Demo() {
+ const [horizon, setHorizon] = useState<string | null>("Weekly");
+ return (
+  <div>
+   <HorizonPicker value={horizon} onValueChange={setHorizon} />
+   <p>Parent state: {horizon ?? "null"}</p>
+  </div>
+ );
+}
+```
+
 ### CSS Classes
 
 in react, the css class are passed to an element with property **className**, which value can also be dynamic:
