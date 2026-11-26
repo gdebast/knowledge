@@ -49,10 +49,10 @@ npx eslint --init
 A **page** is a fresh tab in a fresh browser and is only accessible in the test:
 
 ```js
-import { test, expect } from '@playwright/test';
+import { test, expect } from "@playwright/test";
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test("has title", async ({ page }) => {
+  await page.goto("https://playwright.dev/");
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Playwright/);
@@ -146,6 +146,8 @@ There are after and before hooks:
 - **test.afterEach** is executed after each test
 - **test.afterAll** is executed after all tests of the same worker
 
+For instance we can use the beforeEach to go to the page we want to test.
+
 ```js
 // @ts-check
 import { test, expect } from "@playwright/test";
@@ -156,7 +158,7 @@ test.describe("Example of grouping", () => {
   });
 
   test.beforeEach(async () => {
-    ...
+    await page.goto("http://localhost:3000/");
   });
 
   test.afterEach(async () => {
@@ -224,9 +226,9 @@ test.describe("tags", () => {
 
 ## VS code test explorer
 
-To change the testing folder, go to the test tab add scroll to the configuration to choose an alternative “[playwright.config.js](http://playwright.config.js)”
+To change the testing folder, go to the test tab, and scroll to the configuration to choose an alternative `playwright.config.js`
 
-It is also possible to run the tests on other browsers, if they are configured in the “[playwright.config.js](http://playwright.config.js)”.
+It is also possible to run the tests on other browsers, if they are configured in the `playwright.config.js`.
 
 We can also show the browser while the test is running.
 
@@ -386,5 +388,124 @@ Of course, you can add the test in the script part of the package.json.
 }
 ```
 
-##
+# Locators
 
+## getByRole and strict mode
+
+A locator like `page.getByRole` aims to locate and return a DOM element in a page.
+
+Playwright has a strict mode that forces each locator call to resolve to exactly one DOM element, if the function chaining `expect` is expecting one element. We can enforce to take the first encountered if we follow the locator by `.first()`.
+
+The `page.getByRole()` locator reflects how users and assistive technology perceive the page, for example whether some element is a button or a checkbox. When locating by role, you should usually pass the accessible name as well, so that the locator pinpoints the exact element.
+
+You can access the accessibility tab in the browser to find the Role and its name:
+
+![](./images/Picture2.png)
+
+```js
+import { expect, test } from "@playwright/test";
+
+test.describe("sample suite", () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto("http://localhost:3000/isolation-test.html");
+  });
+
+  test("test getByRole", async ({ page }) => {
+    await expect(
+      page.getByRole("button", { name: "Submit form" }),
+    ).toBeVisible();
+  });
+});
+```
+
+## More getBy locators
+
+`getByLabel` points to the DOM element which label is given as argument.
+
+`getByPlaceholder` points to the DOM element which place-holder is given as argument.
+
+For instance:
+
+```js
+page.getByLabel("Name:");
+page.getByPlaceholder("Enter your full name (e.g., John Doe)");
+page.getByText("Name:");
+page.getByAltText("Form icon");
+page.getByTitle("Please enter your full name");
+page.getByTestId("name-input");
+page.locator("#name-1");
+```
+
+find respectively:
+
+- the `input` element which label is "Names:". It does not find the `label` elements.
+- the `input` element because it has the given `Enter your full name (e.g., John Doe)` place holder
+- the `label` element because its text inside is `Name:`
+- the `img` element because its alternative text is `Form icon`
+- the `input ` element because its title is `Please enter your full name`
+- the `input ` element because its `data-testid` is `name-input:`
+- the `input ` element because its css locator can be `#name-1` because its id is `#name-1`
+
+```html
+<div class="form-group" role="group">
+  <img src="" alt="Form icon" />
+  <label for="name-1">Name:</label>
+  <input
+    id="name-1"
+    data-testid="name-input"
+    placeholder="Enter your full name (e.g., John Doe)"
+    title="Please enter your full name"
+  />
+</div>
+```
+
+## Filtering and chaining locators
+
+When a locator resolves to multiple DOM element, we can use the `filter()` method to narrow down the locators. When the using a another locator method like `getByRole` after another locator, we look for another DOM element inside.
+
+For instance, the following test:
+
+- starts by finding the unordered list with its test id
+- inside the unordered list, it finds the element that have the text "Practice test isolation"
+- inside this list item, we can finf the `toggle` button.
+
+```js
+import { expect, test } from "@playwright/test";
+
+test.describe("sample suite", () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto("http://localhost:3000/isolation-test.html");
+  });
+
+  test("filtering and chaining locators", async ({ page }) => {
+    const todoList = page.getByTestId("todo-list");
+    await expect(todoList).toBeVisible();
+
+    const secondTodo = todoList
+      .getByRole("listitem")
+      .filter({ hasText: "Practice test isolation" });
+    await expect(secondTodo).toBeVisible();
+
+    const togleButton = secondTodo.getByRole("button", { name: "Toggle" });
+    await expect(togleButton).toBeVisible();
+  });
+
+  test("test two @smoke", async ({ page }) => {});
+});
+```
+
+```html
+<ul data-testid="todo-list">
+  <li>
+    <span>Learn Playwright testing</span>
+    <button>Toggle</button>
+    <button>Delete</button>
+  </li>
+
+  <li>
+    <span>Practice test isolation</span>
+    <button>Toggle</button>
+    <button>Delete</button>
+  </li>
+</ul>
+```
