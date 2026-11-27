@@ -509,3 +509,88 @@ test.describe("sample suite", () => {
   </li>
 </ul>
 ```
+
+# Reading & writing UI data
+
+## Typing and Keyboard
+
+The goal here is to explain how to interact with the keyboard. The first think to do is to focus on the element we want to writing in. We can use the locator `focus` or `click` method. Once the focus is achieved, we can write with use `page.keyboard` to get the keyboard and use `type` to write something or `press` to press key strokes. Alternatively, we can directly use the locator to `fill` the element with a text.
+
+The following example shows the different possibilities:
+
+```js
+import { expect, test } from "@playwright/test";
+
+test.describe("sample suite", () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto("http://localhost:3000/isolation-test.html");
+  });
+
+  test("Copy-paste example", async ({ page }) => {
+    const email = "gatien.debast@gmail.com";
+    const nameField = page.getByRole("textbox", { name: "Name:" });
+    await nameField.focus();
+    await page.keyboard.type(email);
+    await page.keyboard.press("Control+A");
+    await page.keyboard.press("Control+C");
+    const mailField = page.getByRole("textbox", { name: "Email:" });
+    await mailField.focus();
+    await page.keyboard.press("Control+V");
+  });
+
+  test("fill form and submit example", async ({ page }) => {
+    const nameField = page.getByRole("textbox", { name: "Name:" });
+    await nameField.fill("Gatien De Bast");
+    const mailField = page.getByRole("textbox", { name: "Email:" });
+    await mailField.focus();
+    await page.keyboard.type("gatien.debast@gmail.com");
+    const submitButton = page.getByRole("button", { name: "Submit" });
+    await submitButton.click();
+  });
+});
+```
+
+## Text retrieval methods
+
+To get the static text in a the DOM, we can use the `textContent`, `innerText`, `allTextContents` and `allInnerTexts` methods.
+
+```js
+test("data retrival", async ({ page }) => {
+  const titleElt = page.getByRole("heading", { name: "Form Submission" });
+  await expect(titleElt).toBeVisible();
+  console.log(await titleElt.textContent());
+  console.log(await titleElt.innerText());
+  console.log(await titleElt.allTextContents());
+  console.log(await titleElt.allInnerTexts());
+});
+```
+
+To get the value in an input field, we use `inputValue`:
+
+```js
+test("data writting and retrival", async ({ page }) => {
+  const name = "Gatien De Bast";
+  const nameField = page.getByRole("textbox", { name: "Name:" });
+  await nameField.fill(name);
+  const inputValue = await nameField.inputValue();
+  expect(inputValue).toEqual(name);
+});
+```
+
+## getting rows and cell in tables
+
+We can use the `nth` from a locator to get the n-th element statisfying a locator.
+
+This can be usefull to get the rows and the cell of a table:
+
+```js
+test("retriving table data", async ({ page }) => {
+  const addButton = page.getByRole("button", { name: "Add new table row" });
+  await addButton.click();
+  const table = page.getByRole("table", { name: "Data Table" });
+  const firstRow = table.getByRole("rowgroup", { name: "data" }).nth(0);
+  const firstCell = firstRow.locator("td").nth(0);
+  const value = await firstCell.textContent();
+  expect(value).toBeTruthy();
+});
+```

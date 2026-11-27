@@ -37,6 +37,15 @@
       "getByTestId",
       "locator"
     ],
-    "Filtering and chaining locators": ["locator", "filter"]
+    "Filtering and chaining locators": ["locator", "filter"],
+    "Typing and Keyboard": ["keyboard", "focus", "press", "fill", "type"],
+    "Text retrieval methods": [
+      "textContent",
+      "innerText",
+      "allTextContents",
+      "allInnerTexts",
+      "inputValue"
+    ],
+    "getting rows and cell in tables": ["nth"]
   }
 }
